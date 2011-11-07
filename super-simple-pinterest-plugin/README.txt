@@ -1,8 +1,3 @@
-=== Beautiful-super-simple Pinterest Widget ===
-This plugin was modified by Ethan Hackett to make a more beautiful version of Paul Sciarra's <sciarra@gmail.com> widget. Huge thanks to Paul.
-- Ethan Hackett <twitter: @ethanhackett>
----------------------------------------------------------------------------
-
 === Super-simple Pinterest Widget ===
 Plugin URI: http://pinterest.com/
 Description: This is a lightweight Wordpress plugin to display your recent Pinterest pins.

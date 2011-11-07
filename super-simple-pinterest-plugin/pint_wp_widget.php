@@ -51,77 +51,112 @@ function widget_pinterest($args) {
 
 <!-- Start of Pinterest Badge -->
 
+<!-- Start Custom CSS for Pinterest Widget -->
 <style media="screen" type="text/css">
-		#pint_badge_uber_wrapper {
-			background-color: #f6f6f6;
-			-moz-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
-			-webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
-			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
-			margin-right: -20px;
-			margin-left: -24px;
-			border-right: 4px solid #d89994;
-			overflow: auto;
-		}
-		
-		#pint_badge_uber_wrapper ul, #pint_badge_uber_wrapper ul li{
-			list-style: none;
-			overflow: auto;
-			margin: 0;
-			padding: 0;
-		}
-		
-		#pint_badge_uber_wrapper ul  {
-			clear: both;
-			padding: 7px 5px 7px 20px;
-			position: relative;
-			top: -5px;
-		}
-		
-		#pint_badge_uber_wrapper ul li a h4 {
-			font-size: 11px;
-			margin: 9px 4px 4px;
-			color: #bdbdbd;
-			font-weight: normal;
-			font-style: normal;
-		}
-		
-		#pint_badge_uber_wrapper ul li {
-			float: left;
-			background-color: #ffffff;
-			-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-			-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-			text-align: center;
-			padding: 15px 10px 10px;
-			margin-right: 18px;
-			margin-bottom: 15px;
-			width: 20%;
-			height: 210px;
-			overflow: hidden;
-		}
-		
-		#pint_badge_uber_wrapper ul li a img {
-			max-height: 150px;
-			max-width: 150px;
-			border: 1px solid #f2f2f2;
-		}
-		
-		#more-pins {
-			display: block;
-			float: left;
-			padding: 10px 7px 10px 19px;
-			color: #c2c2c2;
-			font-size: 15px;
-		}
-		a#more-pins:hover {
-			color: #77afb5;
-		}
-		#more-pins img {
-			margin-bottom: -3px;
-		}			
+	/* Pinterest Plugin */
+	
+	#pint_badge_uber_wrapper {
+		background-color: #f6f6f6;
+	/*	border-top: 2px solid #ececec;
+		border-bottom: 2px solid #ececec;*/
+		-moz-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
+		-webkit-box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
+		margin-right: -20px;
+		margin-left: -24px;
+		border-right: 4px solid #d89994;
+		overflow: auto;
+	}
+	
+	#pint_badge_uber_wrapper ul, #pint_badge_uber_wrapper ul li{
+		list-style: none;
+		overflow: auto;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#pint_badge_uber_wrapper ul  {
+		clear: both;
+		padding: 7px 5px 7px 20px;
+		position: relative;
+		top: -5px;
+	}
+	
+	#pint_badge_uber_wrapper ul li a h4 {
+		font-size: 11px;
+		margin: 9px 4px 4px;
+		color: #bdbdbd;
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	#pint_badge_uber_wrapper ul li {
+		float: left;
+		background-color: #ffffff;
+		-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+		-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+		text-align: center;
+		padding: 15px 10px 10px;
+		margin-right: 18px;
+		margin-bottom: 15px;
+		width: 20%;
+		height: 210px;
+		overflow: hidden;
+	}
+	
+	#pint_badge_uber_wrapper ul li a img {
+		max-height: 150px;
+		max-width: 150px;
+		border: 1px solid #f2f2f2;
+	}
+	
+	#more-pins {
+		display: block;
+		float: left;
+		padding: 10px 7px 10px 19px;
+		color: #a5a5a5;
+		font-size: 15px;
+	}
+	a#more-pins:hover {
+		color: #77afb5;
+	}
+	#more-pins img {
+		margin-bottom: -3px;
+		margin-right: 4px;
+	}
+	#fork {
+		float: right;
+		padding: 4px 9px 4px 21px;
+		background: url(images/fork.png) no-repeat 6px 5px;
+		font-size: 13px;
+		margin-top: 8px;
+		margin-right: 21px;
+		opacity: 0.2;
+		color: #4a4a4a;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	a#fork:hover{
+		float: right;
+		padding: 4px 9px 4px 21px;
+		background: url(images/fork.png) no-repeat 6px -20px #979797;
+		font-size: 13px;
+		margin-top: 8px;
+		margin-right: 21px;
+		opacity: 1;
+		color: #ffffff;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
 </style>
+<!-- End Custom CSS for Pinterest Widget -->
 
 <div id="pint_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0">
+<a href="https://github.com/Ethanhackett/Beautiful-super-simple-Pinterest-widget" target="_blank" id="fork" title="fork this modified wordpress plugin">Fork</a>
 <a href="<?php echo strip_tags( $pinterest_home ) ?>" id="more-pins"><img src="<?php bloginfo( 'url' ); ?>/wp-content/plugins/super-simple-pinterest-plugin/pinterest.png" width="78px" height="20px"> View Pins</a>
 		<ul>
 			<?php echo $out ?>
